@@ -53,7 +53,7 @@ class Client:
         self.input_area.pack(padx=20, pady=5)
 
         self.send_button = tkinter.Button(self.win, text="Send", command=self.write)
-        self.send_button.config(font=("Arial", 12))   
+        self.send_button.config(font=("Arial", 12)) 
         self.send_button.pack(padx=20, pady=5)
         
         self.gui_done = True
@@ -76,7 +76,7 @@ class Client:
     def receive(self):
         while self.running:
             try:
-                message = self.sock.recv(1024)
+                message = self.sock.recv(1024).decode('utf-8')
                 if message == 'NICK':
                     self.sock.send(self.nickname.encode("utf-8"))
                 else:
