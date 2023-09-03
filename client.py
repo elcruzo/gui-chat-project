@@ -1,3 +1,7 @@
+"""
+This is basically the client side
+"""
+
 import socket
 import threading
 import tkinter
@@ -85,7 +89,7 @@ class Client:
             except ConnectionAbortedError:
                 break
             
-            except:
+            except: # pylint: disable=W0702
                 print("Error")
                 self.sock.close()
                 break

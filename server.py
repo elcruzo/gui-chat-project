@@ -17,7 +17,7 @@ def broadcast(message):
     for client in clients:
         client.send(message)
  
-#handle
+
 def handle(client):
     while True:
         try:
@@ -34,7 +34,7 @@ def handle(client):
             break
             
         
-#receive
+
 def receive():
     while True:
         client, address = server.accept()
@@ -54,4 +54,5 @@ def receive():
         thread.start()
        
 print("Server running...")
+
 receive()        
