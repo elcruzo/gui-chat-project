@@ -1,2 +1,3 @@
-# gui-chat-project
-Designed like a chat app for two users to communicate in real-time
+# GUI Chat in Python
+
+This project is designed like a chat app for two users to communicate in real-time
