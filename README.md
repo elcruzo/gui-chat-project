@@ -9,7 +9,7 @@ A Python-based Graphical User Interface (GUI) chat application using sockets and
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributions](#contributions)
 - [License](#license)
 
 ## Introduction
@@ -63,6 +63,7 @@ Server (server.py)
 
    ```bash
    python server.py
+   ```
 4. The server will start listening for incoming client connections on the specified IP address and port.
 
 Client (client.py)
